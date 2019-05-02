@@ -24,13 +24,14 @@ Create a container based on the docker-workshop image and map port 8080 on the h
 `docker ps -a`
 
 ## Get a shell in the container
-Create a container based on the docker-workshop image and map port 8080 on the host to port 80 in the container.
+Get a shell in a running container.
 
-`docker exec -it docker-workshop `  
+`docker exec -it <image-id> bash`  
 
 ## Stop a container
+Stop the container.  It may remain to be deleted later depending upon the startup options.
 
-`docker stop <image id from the list of all containers>`  
+`docker stop <image-id>`  
 
 Exammple `docker stop 0d778a2bd94c`
 
